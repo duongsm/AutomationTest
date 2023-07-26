@@ -32,9 +32,9 @@ public class HomeWordDay8_1 extends CommonBase{
 	}
 	@Test
 	public void findByClassName() {
-		driver.findElement(By.xpath("class=\"selectors-input jsSelector"));
+		driver.findElement(By.className("class=\"pass.selectors-input jsSelector"));
 		System.out.println("Found element by ClassName"); 
-		driver.findElement(By.xpath("class=\"form-control"));
+		driver.findElement(By.className("class=\"form-control"));
 		System.out.println("Found element by ClassName");
 	}
 	@AfterTest
