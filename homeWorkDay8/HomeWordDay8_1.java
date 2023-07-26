@@ -37,6 +37,11 @@ public class HomeWordDay8_1 extends CommonBase{
 		driver.findElement(By.className("class=\"form-control"));
 		System.out.println("Found element by ClassName");
 	}
+	@Test
+	public void findByTagName() {
+		driver.findElement(By.tagName("input"));
+		System.out.println("Found element by TagName"); 
+	}
 	@AfterTest
 	public void quitDriver() {
 		driver.close();

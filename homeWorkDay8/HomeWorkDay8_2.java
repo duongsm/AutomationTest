@@ -10,7 +10,7 @@ import automation.common.CommonBase;
 public class HomeWorkDay8_2 extends CommonBase{
 	@BeforeTest
 	public void openPage() {
-		driver = initChromeDriver("https://automationfc.github.io/basic-form/index.html");
+		driver = initFirefoxDriverTest("https://automationfc.github.io/basic-form/index.html");
 	}
 	@Test
 	public void findById() {
@@ -33,6 +33,13 @@ public class HomeWorkDay8_2 extends CommonBase{
 		System.out.println("Found email element by Name");
 		driver.findElement(By.name("password"));
 		System.out.println("Found password element by Name");	
+	}
+	@Test
+	public void findByTagName() {
+		driver.findElement(By.tagName("input"));
+		System.out.println("Found element by TagName"); 
+		driver.findElement(By.tagName("textarea"));
+		System.out.println("Found element by TagName"); 
 	}
 	@AfterTest
 	public void quitDriver() {
