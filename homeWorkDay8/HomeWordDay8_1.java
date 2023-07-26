@@ -10,7 +10,7 @@ import automation.common.CommonBase;
 public class HomeWordDay8_1 extends CommonBase{
 	@BeforeTest
 	public void openPage() {
-		driver = initChromeDriver("https://selectorshub.com/xpath-practice-page/");
+		driver = initFirefoxDriverTest("https://selectorshub.com/xpath-practice-page/");
 	}
 	@Test
 	public void findById() {
@@ -27,14 +27,14 @@ public class HomeWordDay8_1 extends CommonBase{
 		System.out.println("Found password number element by Name");
 		driver.findElement(By.name("company"));
 		System.out.println("Found company element by Name");
-		driver.findElement(By.name("moblie number"));
+		driver.findElement(By.name("mobile number"));
 		System.out.println("Found moblie number element by Name");		
 	}
 	@Test
 	public void findByClassName() {
-		driver.findElement(By.className("selectors-input jsSelector"));
-		System.out.println("Found element by ClassName");
-		driver.findElement(By.className("form-control"));
+		driver.findElement(By.xpath("class=\"selectors-input jsSelector"));
+		System.out.println("Found element by ClassName"); 
+		driver.findElement(By.xpath("class=\"form-control"));
 		System.out.println("Found element by ClassName");
 	}
 	@AfterTest
