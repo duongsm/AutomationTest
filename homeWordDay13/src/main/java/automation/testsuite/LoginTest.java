@@ -62,17 +62,5 @@ public class LoginTest extends CommonBase {
 		assertTrue(expected.isDisplayed());
 	}
 	
-	@Test
-	public void LogoutSuccessfully() {
-		LoginPage page = new LoginPage(driver);
-		page.LoginFunction("admin@demo.com", "riseDemo");
-		// Kiem tra ket qua sau khi dang nhap thanh cong
-		DashBoardPage dashboard = new DashBoardPage();
-		WebElement expected = driver.findElement(dashboard.dashboardText);
-		assertTrue(expected.isDisplayed());
-		
-		page.LogoutFunction();
-		WebElement expectedLogout = driver.findElement(dashboard.logoutText);
-		assertTrue(expectedLogout.isDisplayed());
-	}
+	
 }

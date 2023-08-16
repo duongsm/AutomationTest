@@ -5,7 +5,11 @@
     <classes>
       <class name="automation.testsuite.LoginTest">
         <methods>
+          <include name="LoginSuccessfully"/>
+          <include name="LoginFail_IncorrectEmail"/>
+          <include name="LoginFail_IncorrectPassword"/>
           <include name="LogoutSuccessfully"/>
+          <include name="LoginFail_IncorrectPasswordEmail"/>
           <include name="openPage"/>
         </methods>
       </class> <!-- automation.testsuite.LoginTest -->
