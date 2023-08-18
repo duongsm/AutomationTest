@@ -10,7 +10,7 @@ import automation.common.CommonBase;
 import automation.constant.AccountConstant;
 import automation.pageLocator.DanhSachKhoaHoc;
 import automation.pageLocator.DashBoardPage;
-import automation.pageLocator.Day14_LoginWithNewPasswordPageFactory;
+import automation.pageLocator.Day14_LoginPageFactory;
 
 public class Day14_LoginWithNewPasswordTestFactory extends CommonBase{
 	@BeforeTest
@@ -19,12 +19,11 @@ public class Day14_LoginWithNewPasswordTestFactory extends CommonBase{
 	}	
 	@Test
 	public void loginSuccessfullyWithNewPassword() {
-		Day14_LoginWithNewPasswordPageFactory login = new Day14_LoginWithNewPasswordPageFactory(driver);
+		Day14_LoginPageFactory login = new Day14_LoginPageFactory(driver);
 		login.LoginWithNewPassword("DuongDB5@gmail.com", "NewPassword");
 		DanhSachKhoaHoc dskh = new DanhSachKhoaHoc();
 		pause(4000);
 		WebElement expected = driver.findElement(dskh.loginSuccess);
 		assertTrue(expected.isDisplayed());
-		
 	}
 }

@@ -12,7 +12,7 @@ import automation.constant.AccountConstant;
 import automation.pageLocator.DanhSachKhoaHoc;
 import automation.pageLocator.DashBoardPage;
 import automation.pageLocator.LoginPageFactory;
-import automation.pageLocator.SignUpPageFactory;
+import automation.pageLocator.Day14_SignUpPageFactory;
 
 public class Day14_SignUpTestFactory extends CommonBase {
 	@BeforeTest
@@ -22,7 +22,7 @@ public class Day14_SignUpTestFactory extends CommonBase {
 
 	@Test
 	public void signUpSuccessfully() {
-		SignUpPageFactory signup = new SignUpPageFactory(driver);
+		Day14_SignUpPageFactory signup = new Day14_SignUpPageFactory(driver);
 		signup.SignUpFunction("DuongDB", "DuongDB5@gmail.com", "Password", "0967896789");
 
 		DanhSachKhoaHoc dskh = new DanhSachKhoaHoc();
