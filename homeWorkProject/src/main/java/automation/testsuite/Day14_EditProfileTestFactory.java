@@ -13,7 +13,7 @@ public class Day14_EditProfileTestFactory extends CommonBase{
 	public void openApplication() {
 		driver = initFirefoxDriverTest(AccountConstant.webURL_1);
 		Day14_LoginPageFactory login = new Day14_LoginPageFactory(driver);
-		login.LoginWithNewPassword("DuongDB5@gmail.com", "Password");
+		login.Login("DuongDB5@gmail.com", "Password");
 	}
 	
 	@Test

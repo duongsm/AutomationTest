@@ -26,4 +26,10 @@ public class Day14_LoginPageFactory {
 		txtLoginPass.sendKeys(password);
 		btnLogin.click();
 	}
+	
+	public void Login(String email, String password) {
+		txtLoginUserName.sendKeys(email);
+		txtLoginPass.sendKeys(password);
+		btnLogin.click(); 
+	}
 }
