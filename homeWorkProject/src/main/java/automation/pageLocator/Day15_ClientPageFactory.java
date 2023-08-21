@@ -1,16 +1,19 @@
 package automation.pageLocator;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Day15_ClientPageFactory {
 
-	@FindBy(xpath = "(//span[@class = 'menu-text '])[2]")
-	private WebElement linkClient;
+//	@FindBy(xpath = "(//span[@class = 'menu-text '])[2]")
+//	private WebElement linkClient;
 
 	@FindBy(xpath = "//a[@title = 'Add client']")
 	private WebElement btnAddClient;
@@ -24,8 +27,12 @@ public class Day15_ClientPageFactory {
 	@FindBy(xpath = "//input[@id = 'company_name']")
 	private WebElement txtCompany;
 
-	@FindBy(id = "s2id_created_by")
+	// xpath của Owner dropdownlist
+	@FindBy(xpath = "//div[@id='s2id_created_by']")
 	private WebElement dropdownOwner;
+	// Giá trị của từng Owner trong màn Add Client
+	@FindBy(xpath = "(//ul[@role='listbox'])[2]/li[1]")
+	private WebElement ownerValue1;
 
 	@FindBy(id = "address")
 	private WebElement txtAddress;
@@ -66,6 +73,15 @@ public class Day15_ClientPageFactory {
 	@FindBy(xpath = "//button[@class = 'btn btn-primary']")
 	private WebElement btnSaveAndClose;
 
+	@FindBy(xpath = "//a[text() = 'Clients']")
+	private WebElement clientTag;
+	
+	@FindBy(xpath = "(//input[@placeholder = 'Search'])[2]")
+	private WebElement searchBox;
+	
+	@FindBy(xpath = "//td[@class = ' all']//a[text()='PersonDemo']")
+	private WebElement searchResult;
+	
 	private WebDriver driver;
 
 	public Day15_ClientPageFactory(WebDriver driver) {
@@ -73,11 +89,21 @@ public class Day15_ClientPageFactory {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void AddClient(String company) {
-		linkClient.click();
+	public void AddClient(String personName) throws InterruptedException {
+		DashBoardPage dashboard = new DashBoardPage();
+		driver.findElement(dashboard.clientlink).click();
 //		btnAddClient.click();
 		((JavascriptExecutor) driver).executeScript("arguments [0].click();", btnAddClient);
-		txtCompany.sendKeys(company);
+		Thread.sleep(4000);
+		radioPerson.click();
+		txtCompany.sendKeys(personName);
+		dropdownOwner.click();
+		ownerValue1.click();
 		btnSaveAndClose.click();
+		((JavascriptExecutor) driver).executeScript("arguments [0].click();", clientTag);
+		Thread.sleep(4000);
+		searchBox.sendKeys(personName);
+		Thread.sleep(4000);
+		assertTrue(searchResult.isDisplayed());
 	}
 }

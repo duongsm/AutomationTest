@@ -8,5 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DashBoardPage {
 	public By dashboardText = By.xpath("//span[text() = 'Dashboard']");
+	public By clientlink = By.xpath("(//span[@class = 'menu-text '])[3]");
 	public By logoutText = By.xpath("//h2[text() = 'Sign in']");
 }

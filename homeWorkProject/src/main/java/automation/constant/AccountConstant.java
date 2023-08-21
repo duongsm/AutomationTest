@@ -9,4 +9,5 @@ public class AccountConstant {
 
 	public static String webURL_3 = "http://rise.fairsketch.com/clients";
 
+	public static String webURL_4 = "https://techydevs.com/demos/themes/html/trizen-demo/trizen/index.html";
 }

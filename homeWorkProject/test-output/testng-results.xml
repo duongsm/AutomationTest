@@ -1,131 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T10:39:26 ICT" name="Default suite" finished-at="2023-08-18T10:42:05 ICT" duration-ms="158860">
+  <suite started-at="2023-08-21T13:06:07 ICT" name="Default suite" finished-at="2023-08-21T13:06:20 ICT" duration-ms="13705">
     <groups>
     </groups>
-    <test started-at="2023-08-18T10:39:26 ICT" name="Default test" finished-at="2023-08-18T10:42:05 ICT" duration-ms="158860">
-      <class name="automation.testsuite.Day14_EditProfileTestFactory">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:automation.testsuite.Day14_EditProfileTestFactory@3e27ba32]" started-at="2023-08-18T10:39:26 ICT" name="openApplication" finished-at="2023-08-18T10:42:05 ICT" duration-ms="158834" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: DuongDB4@gmail.com đã bị trùng vui lòng chọn email khác: 
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [91a4f155-fab4-4c7e-89a1-2ab79ebd1202, findElement {using=id, value=thongbao}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:8388, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 92800, moz:profile: /var/folders/sw/kkxpz9n979s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8388/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 91a4f155-fab4-4c7e-89a1-2ab79ebd1202]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: DuongDB4@gmail.com đã bị trùng vui lòng chọn email khác: 
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [91a4f155-fab4-4c7e-89a1-2ab79ebd1202, findElement {using=id, value=thongbao}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:8388, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 92800, moz:profile: /var/folders/sw/kkxpz9n979s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8388/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 91a4f155-fab4-4c7e-89a1-2ab79ebd1202
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at automation.testsuite.Day14_SignUpTestFactory.signUpSuccessfully(Day14_SignUpTestFactory.java:30)
-at automation.testsuite.Day14_EditProfileTestFactory.openApplication(Day14_EditProfileTestFactory.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+    <test started-at="2023-08-21T13:06:07 ICT" name="Default test" finished-at="2023-08-21T13:06:20 ICT" duration-ms="13705">
+      <class name="automation.testsuite.SearchFlights_Day16">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:automation.testsuite.SearchFlights_Day16@3b0fe47a]" started-at="2023-08-21T13:06:07 ICT" name="openApplication" finished-at="2023-08-21T13:06:16 ICT" duration-ms="9323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="editProfileSuccessfully()[pri:0, instance:automation.testsuite.Day14_EditProfileTestFactory@3e27ba32]" started-at="2023-08-18T10:42:05 ICT" name="editProfileSuccessfully" finished-at="2023-08-18T10:42:05 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: DuongDB4@gmail.com đã bị trùng vui lòng chọn email khác: 
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [91a4f155-fab4-4c7e-89a1-2ab79ebd1202, findElement {using=id, value=thongbao}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:8388, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 92800, moz:profile: /var/folders/sw/kkxpz9n979s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8388/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 91a4f155-fab4-4c7e-89a1-2ab79ebd1202]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: DuongDB4@gmail.com đã bị trùng vui lòng chọn email khác: 
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [91a4f155-fab4-4c7e-89a1-2ab79ebd1202, findElement {using=id, value=thongbao}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:8388, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 92800, moz:profile: /var/folders/sw/kkxpz9n979s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8388/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 91a4f155-fab4-4c7e-89a1-2ab79ebd1202
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at automation.testsuite.Day14_SignUpTestFactory.signUpSuccessfully(Day14_SignUpTestFactory.java:30)
-at automation.testsuite.Day14_EditProfileTestFactory.openApplication(Day14_EditProfileTestFactory.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="ChooseDatePicker()[pri:0, instance:automation.testsuite.SearchFlights_Day16@3b0fe47a]" started-at="2023-08-21T13:06:16 ICT" name="ChooseDatePicker" finished-at="2023-08-21T13:06:20 ICT" duration-ms="4359" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editProfileSuccessfully -->
-      </class> <!-- automation.testsuite.Day14_EditProfileTestFactory -->
+        </test-method> <!-- ChooseDatePicker -->
+        <test-method is-config="true" signature="closeBrowserTest()[pri:0, instance:automation.testsuite.SearchFlights_Day16@3b0fe47a]" started-at="2023-08-21T13:06:20 ICT" name="closeBrowserTest" finished-at="2023-08-21T13:06:20 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserTest -->
+      </class> <!-- automation.testsuite.SearchFlights_Day16 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
