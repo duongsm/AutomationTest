@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T13:36:18 ICT" name="Default suite" finished-at="2023-08-30T13:36:43 ICT" duration-ms="25002">
+  <suite started-at="2023-08-30T14:58:33 ICT" name="Default suite" finished-at="2023-08-30T14:58:51 ICT" duration-ms="18025">
     <groups>
     </groups>
-    <test started-at="2023-08-30T13:36:18 ICT" name="Default test" finished-at="2023-08-30T13:36:43 ICT" duration-ms="25002">
-      <class name="alert_windows_iframe.Day17_Homework_1">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:alert_windows_iframe.Day17_Homework_1@3e27ba32]" started-at="2023-08-30T13:36:18 ICT" name="openPage" finished-at="2023-08-30T13:36:22 ICT" duration-ms="4444" status="PASS">
+    <test started-at="2023-08-30T14:58:33 ICT" name="Default test" finished-at="2023-08-30T14:58:51 ICT" duration-ms="18025">
+      <class name="alert_windows_iframe.Day17_Homework_2">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:alert_windows_iframe.Day17_Homework_2@3e27ba32]" started-at="2023-08-30T14:58:33 ICT" name="openPage" finished-at="2023-08-30T14:58:40 ICT" duration-ms="7414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="findIFrame1()[pri:0, instance:alert_windows_iframe.Day17_Homework_1@3e27ba32]" started-at="2023-08-30T13:36:22 ICT" name="findIFrame1" finished-at="2023-08-30T13:36:33 ICT" duration-ms="10156" status="PASS">
+        <test-method signature="findIFrame1()[pri:0, instance:alert_windows_iframe.Day17_Homework_2@3e27ba32]" started-at="2023-08-30T14:58:40 ICT" name="findIFrame1" finished-at="2023-08-30T14:58:50 ICT" duration-ms="10160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findIFrame1 -->
-        <test-method signature="homeWork()[pri:0, instance:alert_windows_iframe.Day17_Homework_1@3e27ba32]" started-at="2023-08-30T13:36:33 ICT" name="homeWork" finished-at="2023-08-30T13:36:43 ICT" duration-ms="10384" status="PASS">
+        <test-method signature="homeWork()[pri:0, instance:alert_windows_iframe.Day17_Homework_2@3e27ba32]" started-at="2023-08-30T14:58:50 ICT" name="homeWork" finished-at="2023-08-30T14:58:51 ICT" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeWork -->
-      </class> <!-- alert_windows_iframe.Day17_Homework_1 -->
+      </class> <!-- alert_windows_iframe.Day17_Homework_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
