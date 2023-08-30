@@ -16,9 +16,9 @@ public class Day17_Homework_1 extends CommonBase{
 	public void homeWork() {
 		System.out.println("iframe total: " + driver.findElements(By.tagName("iframe")).size());
 		pause(10000);
-		//scrollToElement(By.xpath("//h2[text() = 'Đăng ký nhận tài liệu:']"));
 		driver.switchTo().frame(5);
-		click(By.xpath("//span[text() = 'Bắt đầu chat']"));
+		clickJavaScript(By.xpath("//span[text() = 'Bắt đầu chat']"));
+		clickJavaScript(By.xpath("//span[text() = 'Sử dụng Messenger']"));
 	}
 	@Test
 	public void findIFrame1() {
