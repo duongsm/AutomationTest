@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.SearchFlights_Day16">
+      <class name="alert_windows_iframe.Day17_Homework_1">
         <methods>
-          <include name="ChooseDatePicker"/>
-          <include name="closeBrowserTest"/>
-          <include name="openApplication"/>
+          <include name="openPage"/>
+          <include name="homeWork"/>
         </methods>
-      </class> <!-- automation.testsuite.SearchFlights_Day16 -->
+      </class> <!-- alert_windows_iframe.Day17_Homework_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

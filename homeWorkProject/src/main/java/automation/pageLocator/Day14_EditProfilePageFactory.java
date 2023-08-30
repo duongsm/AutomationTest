@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Day14_EditProfilePageFactory {
 
@@ -42,6 +43,7 @@ public class Day14_EditProfilePageFactory {
 		txtNewPassword.sendKeys(newpassword);
 		txtReNewPassword.sendKeys(newpassword);
 		btnSavePassword.click();
+		
 	}
 
 	public void Logout() {

@@ -41,8 +41,8 @@ public final class SearchFlights_Day16 extends automation.common.CommonBase {
 
 //	@Test
 //	public void ChooseDatePickerRoundTrip() {
-//		WebElement dateBox = driver.findElement(
-//				By.xpath("(//input[@name = 'daterange'])[1]"));
+//
+//		WebElement dateBox = driver.findElement(By.xpath("(//input[@name = 'daterange'])[1]"));
 //		WebElement RoundTripRadio = driver.findElement(By.xpath("//a[@id= 'round-trip-tab']"));
 //		// Fill date as dd/mm/yyyy as 25/09/2024 - 25/10/2024
 //		((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('readonly','readonly')", dateBox);
@@ -52,6 +52,7 @@ public final class SearchFlights_Day16 extends automation.common.CommonBase {
 //		dateBox.sendKeys("25092024-25102024");
 //		dateBox.sendKeys(Keys.TAB);
 //	}
+
 	@AfterTest
 	public void closeBrowserTest() {
 		// quitDriver(driver);
