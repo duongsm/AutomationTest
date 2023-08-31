@@ -7,6 +7,7 @@
         <methods>
           <include name="openPage"/>
           <include name="homeWork"/>
+          <include name="findIFrame1"/>
         </methods>
       </class> <!-- alert_windows_iframe.Day17_Homework_1 -->
     </classes>

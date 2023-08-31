@@ -1,9 +1,12 @@
 package alert_windows_iframe;
 
+import static org.testng.Assert.assertEquals;
+
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,6 +26,9 @@ public class Day17_Homework_2 extends CommonBase {
 		type(By.name("account_name"), "DuongDB");
 		type(By.name("account_phone"), "0967896789");
 		click(By.xpath("//button[text() = 'Đăng ký ngay']"));
+		WebElement element =  driver.findElement(By.xpath("//button[text() = 'Đăng ký ngay']"));
+		String actualText = element.getText();
+		assertEquals(actualText, "Đăng ký ngay");
 	}
 	@Test
 	public void findIFrame1() {
@@ -33,7 +39,7 @@ public class Day17_Homework_2 extends CommonBase {
 		for( int i = 0; i < size ; i++) {
 			driver.switchTo().frame(i);
 			int numberOfFrame = driver.findElements(By.xpath("//button[text() = 'Đăng ký ngay']")).size();
-			if(numberOfFrame != 0)// Có button Gửi ngay thì in ra vị trí của iframe hiện tại để dùng
+			if(numberOfFrame != 0)// Có button Đăng ký ngay ngay thì in ra vị trí của iframe hiện tại để dùng
 			{
 				System.out.println("Element cần tìm ở vị trí: " +i);
 			}

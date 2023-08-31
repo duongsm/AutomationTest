@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Hoan]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression test with chrome browser(failed)">
+    <parameter name="testNgBrowser" value="chrome"/>
+    <classes>
+      <class name="automation.testsuite.Day14_LoginTestFactory">
+        <methods>
+          <include name="loginSuccessfully"/>
+          <include name="quitDriver"/>
+          <include name="openPage"/>
+        </methods>
+      </class> <!-- automation.testsuite.Day14_LoginTestFactory -->
+    </classes>
+  </test> <!-- Regression test with chrome browser(failed) -->
+</suite> <!-- Failed suite [Suite Hoan] -->

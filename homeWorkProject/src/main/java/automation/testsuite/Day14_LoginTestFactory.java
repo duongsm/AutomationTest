@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
@@ -15,9 +16,16 @@ import automation.pageLocator.LoginPageFactory;
 public class Day14_LoginTestFactory extends CommonBase {
 
 	@BeforeTest
-	public void openApplication() {
-		driver = initFirefoxDriverTest(AccountConstant.webURL);
+	@Parameters("testNgBrowser")
+	public void openPage(String browser) {
+		setupDriver(browser);
+		driver.get(AccountConstant.webURL);
 	}
+	
+//	@BeforeTest
+//	public void openApplication() {
+//		driver = initFirefoxDriverTest(AccountConstant.webURL);
+//	}
 
 	@Test
 	public void loginSuccessfully() {

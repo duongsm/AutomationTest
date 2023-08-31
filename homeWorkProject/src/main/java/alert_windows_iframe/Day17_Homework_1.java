@@ -1,6 +1,10 @@
 package alert_windows_iframe;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,7 +22,9 @@ public class Day17_Homework_1 extends CommonBase{
 		pause(10000);
 		driver.switchTo().frame(5);
 		clickJavaScript(By.xpath("//span[text() = 'Bắt đầu chat']"));
-		clickJavaScript(By.xpath("//span[text() = 'Sử dụng Messenger']"));
+		WebElement element =  driver.findElement(By.xpath("//span[text() = 'Sử dụng Messenger']"));
+		String actualText = element.getText();
+		assertEquals(actualText, "Sử dụng Messenger");
 	}
 	@Test
 	public void findIFrame1() {
