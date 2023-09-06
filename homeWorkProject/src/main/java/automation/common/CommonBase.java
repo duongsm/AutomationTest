@@ -35,9 +35,7 @@ public class CommonBase {
 	{
 		ChromeOptions options = new ChromeOptions();
 		
-		System.setProperty("webdriver.chrome.driver",
-		"/Users/macbook/Downloads/chromedriver-mac-arm64/chromedriver");
-		options.setBinary("/Applications/Google Chrome.app");
+		System.setProperty("webdriver.chrome.driver", "/Users/macbook/Downloads/chromedriver");	
 		driver = new ChromeDriver(options);
 		
 		options.addArguments("--disable-dev-shm-usage");

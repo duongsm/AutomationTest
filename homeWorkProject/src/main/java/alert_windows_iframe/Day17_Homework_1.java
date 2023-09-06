@@ -13,7 +13,7 @@ import automation.common.CommonBase;
 public class Day17_Homework_1 extends CommonBase{
 	@BeforeTest
 	public void openPage() {
-		driver = initFirefoxDriverTest("https://codestar.vn/");
+		driver = initChromeDriver("https://codestar.vn/");
 	}
 	
 	@Test
