@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alert_windows_iframe.Day17_Homework_1">
+      <class name="automation.testsuite.EventManagement">
         <methods>
           <include name="openPage"/>
-          <include name="homeWork"/>
-          <include name="findIFrame1"/>
+          <include name="addEventSuccessfully_OnlyMe"/>
         </methods>
-      </class> <!-- alert_windows_iframe.Day17_Homework_1 -->
+      </class> <!-- automation.testsuite.EventManagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
